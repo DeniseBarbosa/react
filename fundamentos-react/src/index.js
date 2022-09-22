@@ -1,4 +1,10 @@
 import ReactDom from 'react-dom'
+import React from 'react'
 
-const el = document.getElementById('root')
-ReactDom.render('Olá React!!', el)
+
+ReactDom.render(
+    <div>
+        <strong> Usando o JSX</strong>
+    </div>,
+    document.getElementById('root')
+)
