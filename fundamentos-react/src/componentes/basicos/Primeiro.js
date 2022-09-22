@@ -2,6 +2,12 @@
 /** export default function (){
     return 
 }*/
+import React from "react"
+
 export default function Primeiro(){
-    return "Primeiro componentes"
+    const msg = 'Seja bem vindo!'
+    return <di>
+        <h2>Exemplo dois, Primeiro componentes</h2>
+        <p>{msg}</p>
+    </di>
 }
