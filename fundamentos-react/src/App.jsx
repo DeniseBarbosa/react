@@ -1,3 +1,4 @@
+import './App.css'
 import React from "react"
 
 
@@ -9,28 +10,28 @@ import Card from './componentes/layout/Card'
 
 export default function App(props){
     return(
-        <div id='app'>
+        <div className="App">
             <h1>Fundamentos React</h1>
 
-            <Card titulo="#4 - Desafiou Aleatório">
-                 <Aleatorio min={1} max={60}></Aleatorio>
-            </Card>
+            <div className="Cards">
+                <Card titulo="#4 - Desafiou Aleatório">
+                    <Aleatorio min={1} max={60}></Aleatorio>
+                </Card>
 
-            <Card titulo="#3 - Fragmento">
-                <Fragmentos></Fragmentos>
-            </Card>
+                <Card titulo="#3 - Fragmento">
+                    <Fragmentos></Fragmentos>
+                </Card>
 
-            <Card titulo="#2 - Com Parâmentro">
-                <ComParametro 
-                    titulo =" Aqui"
-                    subtitulo = 'Subtitulo'/>
-            </Card>
-           
-            <Card titulo="#1 - Primeiro Componente">
-                <Primeiro></Primeiro>
-            </Card>
+                <Card titulo="#2 - Com Parâmentro">
+                    <ComParametro 
+                        titulo =" Aqui"
+                        subtitulo = 'Subtitulo'/>
+                </Card>
             
-           
+                <Card titulo="#1 - Primeiro Componente">
+                    <Primeiro></Primeiro>
+                </Card> 
+            </div>
             
     </div>
     )
