@@ -11,6 +11,7 @@ import Familia from './componentes/basicos/Familia'
 import FamiliaMembro from './componentes/basicos/FamiliaMembro'
 import ListaAlunos from './componentes/repeticao/ListaAlunos'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos'
+import ParOuImpar from './componentes/condicional/ParOuImpar'
 
 export default function App(props){
     return(
@@ -20,6 +21,11 @@ export default function App(props){
                
 
           <div className="Cards">
+
+                <Card titulo="#9 - Desafio Repetição" color="#080">
+                    <ParOuImpar numero={30}></ParOuImpar>
+                </Card>
+
 
                 <Card titulo="#8 - Desafio Repetição" color="#080">
                     <TabelaProdutos></TabelaProdutos>
